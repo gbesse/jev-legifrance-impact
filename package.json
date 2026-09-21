@@ -1,0 +1,49 @@
+{
+  "name": "@gbesse/jev-legifrance-impact",
+  "version": "0.1.0",
+  "description": "Detect which changed legal provisions may affect a declared business activity.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    },
+    "./jev": {
+      "import": "./src/jev.mjs",
+      "types": "./src/jev.d.mts"
+    }
+  },
+  "bin": {
+    "jev-legifrance-impact": "./bin/jev-legifrance-impact.mjs"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "typecheck": "tsc --noEmit --strict --target ES2022 --module NodeNext docs/public-api-types.mts",
+    "test": "node --test",
+    "demo": "node examples/demo.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbesse/jev-legifrance-impact.git"
+  },
+  "keywords": [
+    "jev",
+    "typesafe-ai",
+    "france",
+    "decision-automation"
+  ],
+  "files": [
+    "src",
+    "bin",
+    "docs",
+    "examples",
+    "scripts"
+  ]
+}
