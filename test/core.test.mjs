@@ -1,4 +1,4 @@
-// Purpose: Verify legal-section diffing and impact review gates.
+// Objectif : vérifier les règles déterministes et les décisions sémantiques soumises à revue.
 import test from "node:test";
 import assert from "node:assert/strict";
 import { diffSections, assessImpact } from "../src/index.mjs";

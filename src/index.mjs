@@ -1,4 +1,4 @@
-// Purpose: Diff normalized legal sections and assess potential business impact.
+// Objectif : implémenter la frontière de décision métier propre au dépôt.
 export function diffSections(before = [], after = []) {
   const a = new Map(before.map((x) => [x.id, x])),
     b = new Map(after.map((x) => [x.id, x])),

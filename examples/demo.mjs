@@ -1,4 +1,4 @@
-// Purpose: Demonstrate legal-version impact screening offline.
+// Objectif : démontrer la frontière de décision sans appel réseau.
 import { analyzeVersions } from "../src/index.mjs";
 import { createFakeProvider } from "../src/jev.mjs";
 const p = createFakeProvider(() => ({

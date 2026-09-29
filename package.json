@@ -1,7 +1,7 @@
 {
   "name": "@gbesse/jev-legifrance-impact",
-  "version": "0.1.0",
-  "description": "Detect which changed legal provisions may affect a declared business activity.",
+  "version": "0.1.1",
+  "description": "Détecte quelles dispositions juridiques modifiées peuvent affecter une activité déclarée.",
   "type": "module",
   "license": "MIT",
   "engines": {

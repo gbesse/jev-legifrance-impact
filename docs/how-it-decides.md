@@ -1,5 +1,5 @@
-# How it decides
+# Comment la décision est prise
 
-Jev Légifrance Impact computes exact section changes, then evaluates only those changes against a bounded activity profile. Results retain the source identifiers and require review when confidence is low.
+Le dépôt ne donne pas d’interprétation juridique, n’établit pas la conformité et ne fournit pas de conseil juridique. L’authentification à l’API Légifrance reste gérée par un adaptateur externe.
 
-The exact question and criteria live beside the call in [src/index.mjs](../src/index.mjs), making review and version control straightforward. Dates, identifiers, arithmetic, candidate generation, thresholds and state transitions remain code-owned. Synthetic demo probabilities are illustrative. Calibrate review thresholds on representative human labels before operational use.
+La question et les critères exacts sont versionnés dans [`src/index.mjs`](../src/index.mjs). Les probabilités de la démonstration sont synthétiques. Calibrez les seuils de revue sur des cas français annotés et représentatifs avant tout usage opérationnel.

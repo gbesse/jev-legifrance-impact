@@ -1,4 +1,4 @@
-// Purpose: Describe normalized legal sections, diffs, and potential impact decisions.
+// Objectif : décrire les types de l’API métier publique.
 import type { JevProvider } from "./jev.mjs";
 export type LegalSection = { id: string; text: string; sourceId?: string };
 export function diffSections(
