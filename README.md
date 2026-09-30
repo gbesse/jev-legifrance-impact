@@ -2,7 +2,7 @@
 
 **Détecte quelles dispositions juridiques modifiées peuvent affecter une activité déclarée.**
 
-[![Tests](https://github.com/gbesse/jev-legifrance-impact/actions/workflows/test.yml/badge.svg)](https://github.com/gbesse/jev-legifrance-impact/actions/workflows/test.yml) [MIT](LICENSE) · Node.js 22+ · v0.1.2 · Documentation française
+[![Tests](https://github.com/gbesse/jev-legifrance-impact/actions/workflows/test.yml/badge.svg)](https://github.com/gbesse/jev-legifrance-impact/actions/workflows/test.yml) [MIT](LICENSE) · Node.js 22+ · v0.1.3 · Documentation française
 
 Le moteur calcule d’abord les modifications exactes entre deux versions d’un texte. Jev évalue ensuite uniquement ces changements par rapport à un profil d’activité borné, en conservant les références de source.
 
@@ -70,10 +70,20 @@ console.log(JSON.stringify(resultat, null, 2));
 Lancez-le avec :
 
 ```sh
-npm run demo
+npm run demo:principal
 ```
 
 Résultat à repérer : `impact: direct`.
+
+### Cas limite à tester
+
+Le diff structurel repère ajouts, modifications et suppressions sans modèle. Le code se trouve dans [`examples/cas-limite.mjs`](examples/cas-limite.mjs).
+
+```sh
+npm run demo:limite
+```
+
+Résultat à repérer : `types: added, modified, removed`. La commande `npm run demo` exécute les deux exemples.
 
 ## Utilisation de la bibliothèque
 
